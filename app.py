@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Gemini API 설정
-api_key = st.secrets["gemini_api_key"]
+api_key = st.secrets["gemini"]["api_key"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
